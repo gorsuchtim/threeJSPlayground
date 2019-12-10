@@ -1,14 +1,14 @@
 {
-  "name": "projecttemplate",
+  "name": "threejsplayground",
   "version": "1.1.0",
-  "description": "Parcel/SPA based file and folder structure, tooling requirements for projects",
+  "description": "Learning to build and playing with 3d animation with greensock and threeJS",
   "main": "src/index.htm",
   "scripts": {
     "autoprefix": "postcss dev/*.css -u autoprefixer -d build --map",
     "build": "npm run clean:build && npm run format && parcel build src/index.htm --out-dir build && npm run autoprefixer",
     "clean:build": "rimraf build",
     "clean:dev": "rimraf dev",
-    "dev": "npm run clean:dev && parcel src/index.htm --out-dir dev",
+    "dev": "parcel src/index.htm --out-dir dev",
     "format": "npm run lint && npm run prettier",
     "prettier": "prettier --write \"src/**/*.{js,jsx,css,htm,json}\"",
     "prettier:check": "prettier --list-different \"src/**/*.{js,jsx,css,htm,json}\"",
